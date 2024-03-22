@@ -26,49 +26,49 @@
 ## Progress
 <details>
 <summary>🆚 Alpha 1</summary>
-- [ ] 1.0 (Player)
-	- [ ] Player Movement
-	- [ ] Item Pickup/drop
-- [ ]  1.1 (Player)
-	- [ ] Player Health
-	- [ ] Player Death
-	- [ ] Inventory System
-- [ ] 2.0 (Enemy)
-	- [ ] Bluesouls patroling
-	- [ ] Bluesouls damange
-	- [ ] Bluesouls health
-	- [ ] Bluesouls death
-	- [ ] Inventory clear after bluesouls kills us
-- [ ] 2.1 (Enemy)
-	- [ ] Whiteman patrolling
-	- [ ] Whiteman damage
-	- [ ] Whiteman health
-	- [ ] Whiteman Going back
-- [ ] 3.0 (Enviroment)
-	- [ ] Fence gate
-	- [ ] Day & night cycle
-	- [ ] Main house
-	- [ ] Side house
+[ ] 1.0 (Player)
+	[ ] Player Movement
+	[ ] Item Pickup/drop
+[ ]  1.1 (Player)
+	[ ] Player Health
+	[ ] Player Death
+	[ ] Inventory System
+[ ] 2.0 (Enemy)
+	[ ] Bluesouls patroling
+	[ ] Bluesouls damange
+	[ ] Bluesouls health
+	[ ] Bluesouls death
+	[ ] Inventory clear after bluesouls kills us
+[ ] 2.1 (Enemy)
+	[ ] Whiteman patrolling
+	[ ] Whiteman damage
+	[ ] Whiteman health
+	[ ] Whiteman Going back
+[ ] 3.0 (Enviroment)
+	[ ] Fence gate
+	[ ] Day & night cycle
+	[ ] Main house
+	[ ] Side house
 </details>
 
 <details>
 <summary>🆚 Alpha 2</summary>
-- [ ]  More items
-- [ ] More houses and structure
-- [ ] Door locks
-- [ ] VODO doll exsistance
+[ ]  More items
+[ ] More houses and structure
+[ ] Door locks
+[ ] VODO doll exsistance
 </details>
 
 <details>
 <summary>🆚 Beta 1</summary>
-- [ ] VODO doll burning
-- [ ] Game escape
-- [ ] Home Menu
-- [ ] Pause Menu
-- [ ] Player UI
-- [ ] Game fail UI
-- [ ] Game completed UI
-- [ ] Lowest time took to complete
+[ ] VODO doll burning
+[ ] Game escape
+[ ] Home Menu
+[ ] Pause Menu
+[ ] Player UI
+[ ] Game fail UI
+[ ] Game completed UI
+[ ] Lowest time took to complete
 </details>
 
 ## Dates
