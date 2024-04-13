@@ -39,10 +39,12 @@ void ACPP_Player::SetupPlayerInputComponent(UInputComponent *PlayerInputComponen
 // CustomFunctions
 void ACPP_Player::PlayerMovement(const FInputActionValue &Value)
 {
+	// Setting variables
 	FVector2D moveInput = Value.Get<FVector2D>();
 	moveInput.Normalize();
 	FRotator MovementRotation(0, Controller->GetControlRotation().Yaw, 0);
 
+	// Moving player
 	if (moveInput.X != 0.f)
 	{
 		FVector Direction = MovementRotation.RotateVector(FVector::ForwardVector);
