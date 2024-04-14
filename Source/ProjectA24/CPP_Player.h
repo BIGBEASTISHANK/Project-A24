@@ -36,8 +36,14 @@ protected:
 		class UInputAction *jumpAction;
 	UPROPERTY(EditDefaultsOnly, Category = "Player Input")
 		class UInputAction *moveAction;
+	UPROPERTY(EditDefaultsOnly, Category = "Player Input")
+		class UInputAction *lookAction;
+	UPROPERTY(EditAnywhere, Category = "Player Input")
+		float camSensitivity = 1;
 
 	// Functions
 	UFUNCTION(Category = "Player Movement")
 		void PlayerMovement(const FInputActionValue &Value);
+	UFUNCTION(Category = "Player Movement")
+		void CameraMovement(const FInputActionValue &Value);
 };

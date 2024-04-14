@@ -34,9 +34,11 @@ void ACPP_Player::SetupPlayerInputComponent(UInputComponent *PlayerInputComponen
 	// Movement actions binding to functions
 	playerEnhancedInputComponent->BindAction(jumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
 	playerEnhancedInputComponent->BindAction(moveAction, ETriggerEvent::Triggered, this, &ACPP_Player::PlayerMovement);
+	playerEnhancedInputComponent->BindAction(lookAction, ETriggerEvent::Triggered, this, &ACPP_Player::CameraMovement);
 }
 
 // CustomFunctions
+// Player movement
 void ACPP_Player::PlayerMovement(const FInputActionValue &Value)
 {
 	// Setting variables
@@ -45,15 +47,43 @@ void ACPP_Player::PlayerMovement(const FInputActionValue &Value)
 	FRotator MovementRotation(0, Controller->GetControlRotation().Yaw, 0);
 
 	// Moving player
-	if (moveInput.X != 0.f)
+	if (moveInput.X != 0.0f)
 	{
 		FVector Direction = MovementRotation.RotateVector(FVector::ForwardVector);
 		AddMovementInput(Direction, moveInput.X);
 	}
 
-	if (moveInput.Y != 0.f)
+	if (moveInput.Y != 0.0f)
 	{
 		FVector Direction = MovementRotation.RotateVector(FVector::RightVector);
 		AddMovementInput(Direction, moveInput.Y);
+	}
+}
+
+// Camera movement
+void ACPP_Player::CameraMovement(const FInputActionValue &Value)
+{
+	// Setting Variable
+	const FVector2D lookValue = Value.Get<FVector2D>();
+
+	// Checking camera sensitivity value
+	if (camSensitivity > 1.f)
+	{
+		camSensitivity = 1.f;
+	}
+	else if (camSensitivity < 0.1f)
+	{
+		camSensitivity = 0.1f;
+	}
+
+	// Moving camera
+	if (lookValue.X != 0.0f)
+	{
+		AddControllerYawInput(lookValue.X * camSensitivity);
+	}
+
+	if (lookValue.Y != 0.0f)
+	{
+		AddControllerPitchInput(lookValue.Y * camSensitivity);
 	}
 }
