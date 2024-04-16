@@ -5,6 +5,7 @@
 #include "InputActionValue.h"
 #include "InputMappingContext.h"
 #include "EnhancedInputComponent.h"
+#include "Camera/CameraComponent.h"
 #include "EnhancedInputSubsystems.h"
 
 // Defaults
@@ -32,18 +33,21 @@ protected:
 	// Variables
 	UPROPERTY(EditDefaultsOnly, Category = "Player Input")
 		class UInputMappingContext *playerIMC;
+
 	UPROPERTY(EditDefaultsOnly, Category = "Player Input")
 		class UInputAction *jumpAction;
 	UPROPERTY(EditDefaultsOnly, Category = "Player Input")
 		class UInputAction *moveAction;
 	UPROPERTY(EditDefaultsOnly, Category = "Player Input")
 		class UInputAction *lookAction;
-	UPROPERTY(EditAnywhere, Category = "Player Input")
-		float camSensitivity = 1;
+	
+	UPROPERTY(EditAnywhere, Category = "Player Values")
+		float cameraSensitivity = 1;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Player Components")
+		class UCameraComponent *playerCamera;
 
 	// Functions
-	UFUNCTION(Category = "Player Movement")
-		void PlayerMovement(const FInputActionValue &Value);
-	UFUNCTION(Category = "Player Movement")
-		void CameraMovement(const FInputActionValue &Value);
+	void PlayerMovement(const FInputActionValue &Value);
+	void CameraMovement(const FInputActionValue &Value);
 };

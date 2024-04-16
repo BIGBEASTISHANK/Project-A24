@@ -1,21 +1,29 @@
-
 #include "CPP_Player.h"
 
+//
 ACPP_Player::ACPP_Player()
 {
 	PrimaryActorTick.bCanEverTick = true;
+
+	// Setting up player camera
+	playerCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("Player Camera"));
+	playerCamera->SetupAttachment(RootComponent);
+	playerCamera->bUsePawnControlRotation = true;
 }
 
+// 
 void ACPP_Player::BeginPlay()
 {
 	Super::BeginPlay();
 }
 
+// 
 void ACPP_Player::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
 
+// 
 void ACPP_Player::SetupPlayerInputComponent(UInputComponent *PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -34,56 +42,32 @@ void ACPP_Player::SetupPlayerInputComponent(UInputComponent *PlayerInputComponen
 	// Movement actions binding to functions
 	playerEnhancedInputComponent->BindAction(jumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
 	playerEnhancedInputComponent->BindAction(moveAction, ETriggerEvent::Triggered, this, &ACPP_Player::PlayerMovement);
-	playerEnhancedInputComponent->BindAction(lookAction, ETriggerEvent::Triggered, this, &ACPP_Player::CameraMovement);
+	playerEnhancedInputComponent->BindAction(lookAction, ETriggerEvent:: Triggered, this, &ACPP_Player::CameraMovement);
 }
 
 // CustomFunctions
 // Player movement
 void ACPP_Player::PlayerMovement(const FInputActionValue &Value)
 {
-	// Setting variables
 	FVector2D moveInput = Value.Get<FVector2D>();
 	moveInput.Normalize();
-	FRotator MovementRotation(0, Controller->GetControlRotation().Yaw, 0);
 
-	// Moving player
-	if (moveInput.X != 0.0f)
-	{
-		FVector Direction = MovementRotation.RotateVector(FVector::ForwardVector);
-		AddMovementInput(Direction, moveInput.X);
-	}
-
-	if (moveInput.Y != 0.0f)
-	{
-		FVector Direction = MovementRotation.RotateVector(FVector::RightVector);
-		AddMovementInput(Direction, moveInput.Y);
-	}
+	// Movement front-back
+	AddMovementInput(GetActorForwardVector(), moveInput.X);
+	// Movement left-right
+	AddMovementInput(GetActorRightVector(), moveInput.Y);
 }
 
 // Camera movement
 void ACPP_Player::CameraMovement(const FInputActionValue &Value)
 {
-	// Setting Variable
-	const FVector2D lookValue = Value.Get<FVector2D>();
+	FVector2D camInput = Value.Get<FVector2D>();
 
-	// Checking camera sensitivity value
-	if (camSensitivity > 1.f)
-	{
-		camSensitivity = 1.f;
-	}
-	else if (camSensitivity < 0.1f)
-	{
-		camSensitivity = 0.1f;
-	}
+	// Fixing camera sensitivity value between 0 and 1
+	cameraSensitivity = FMath::Clamp(cameraSensitivity, 0.0f, 1.0f);
 
-	// Moving camera
-	if (lookValue.X != 0.0f)
-	{
-		AddControllerYawInput(lookValue.X * camSensitivity);
-	}
-
-	if (lookValue.Y != 0.0f)
-	{
-		AddControllerPitchInput(lookValue.Y * camSensitivity);
-	}
+	// Look left right
+	AddControllerYawInput(camInput.X * cameraSensitivity);
+	// Look up down
+	AddControllerPitchInput(camInput.Y * cameraSensitivity);
 }
