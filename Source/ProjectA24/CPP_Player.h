@@ -41,10 +41,12 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Player Input")
 		class UInputAction *lookAction;
 	
-	UPROPERTY(EditAnywhere, Category = "Player Values")
+	UPROPERTY(EditAnywhere, Category = "Player Values", meta = (UIMin = "0.1", UIMax = "1.0"))
 		float cameraSensitivity = 0.45f;
-
-	UPROPERTY(EditDefaultsOnly, Category = "Player Components")
+	UPROPERTY(EditAnywhere, Category = "Player Values", meta = (UIMin = "30", UIMax = "120"))
+		int playerFOV = 90;
+	
+	UPROPERTY(EditAnywhere, Category = "Player Components")
 		class UCameraComponent *playerCamera;
 
 	// Functions

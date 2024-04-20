@@ -5,10 +5,12 @@ ACPP_Player::ACPP_Player()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
-	// Setting up player camera
+	// Setting playerCamera
 	playerCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("Player Camera"));
 	playerCamera->SetupAttachment(RootComponent);
 	playerCamera->bUsePawnControlRotation = true;
+	playerCamera->FieldOfView = playerFOV;
+
 }
 
 // 
