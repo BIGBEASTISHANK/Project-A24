@@ -42,7 +42,7 @@ protected:
 		class UInputAction *lookAction;
 	
 	UPROPERTY(EditAnywhere, Category = "Player Values")
-		float cameraSensitivity = 0.45;
+		float cameraSensitivity = 0.45f;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Player Components")
 		class UCameraComponent *playerCamera;
