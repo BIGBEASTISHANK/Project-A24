@@ -58,6 +58,9 @@
 - [ ] Side House
 - [ ] Door Locks
 
+### Known Issue
+- [ ] FOV Don't change smoothly while changing state between sprint and walk
+
 ## Dates
 - Work started on 22nd March 2024
 - Work stopped (due to studies) on 25th March 2024
