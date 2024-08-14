@@ -24,46 +24,42 @@
 - To Suggest some name please visit issue [#1](https://github.com/BIGBEASTISHANK/Project-A24/issues/1)
 
 ## Progress
-### 🆚 Alpha 1
-- [ ] 1.0 (Player)
+### Prototype:
+1. Player
 	- [x] Player Movement
 	- [ ] Item Pickup/drop
-- [ ]  1.1 (Player)
 	- [ ] Player Health
-	- [ ] Player Death
-	- [ ] Inventory System
-- [ ] 2.0 (Enemy)
-	- [ ] Bluesouls patroling
-	- [ ] Bluesouls damange
+	- [ ] Inventory system
+2. Enemy
+	- [ ] Bluesouls Patroling
+	- [ ] Bluesouls attack
 	- [ ] Bluesouls health
 	- [ ] Bluesouls death
 	- [ ] Inventory clear after bluesouls kills us
-- [ ] 2.1 (Enemy)
 	- [ ] Whiteman patrolling
-	- [ ] Whiteman damage
+	- [ ] Whiteman attack
 	- [ ] Whiteman health
-	- [ ] Whiteman Going back
-- [ ] 3.0 (Enviroment)
-	- [ ] Fence gate
-	- [ ] Day & night cycle
-	- [ ] Main house
-	- [ ] Side house
+	- [ ] Whiteman going back in morning
 
-### 🆚 Alpha 2
-- [ ]  More items
-- [ ] More houses and structure
-- [ ] Door locks
-- [ ] VODO doll exsistance
-
-### 🆚 Beta 1
-- [ ] VODO doll burning
-- [ ] Game escape
-- [ ] Home Menu
-- [ ] Pause Menu
+### QOF Update:
+- [ ] Vodo Doll burning
+- [ ] Game Escape
+- [ ] Home menu
+- [ ] Pause menu
+- [ ] Game Fail menu
+- [ ] Game Completed menu
 - [ ] Player UI
-- [ ] Game fail UI
-- [ ] Game completed UI
 - [ ] Lowest time took to complete
+- [ ] Day & Night cycle
+
+### Finishing Touch
+- [ ] Fence Gate
+- [ ] Main House
+- [ ] Side House
+- [ ] Door Locks
 
 ## Dates
-- Work started on 22 March 2024
+- Work started on 22nd March 2024
+- Work stopped (due to studies) on 25th March 2024
+
+- Work <b>ReStarted</b> on 14th August 2024 

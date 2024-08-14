@@ -7,6 +7,7 @@
 #include "EnhancedInputComponent.h"
 #include "Camera/CameraComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 // Defaults
 #include "CoreMinimal.h"
@@ -29,6 +30,13 @@ public:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent *PlayerInputComponent) override;
 
+private:
+	// Variables
+	float defaultMaxWalkSpeed;
+
+	// Components
+	UCharacterMovementComponent* MovementComponent;
+
 protected:
 	// Variables
 	UPROPERTY(EditDefaultsOnly, Category = "Player Input")
@@ -40,11 +48,16 @@ protected:
 		class UInputAction *moveAction;
 	UPROPERTY(EditDefaultsOnly, Category = "Player Input")
 		class UInputAction *lookAction;
+	UPROPERTY(EditDefaultsOnly, Category = "Player Input")
+		class UInputAction *sprintAction;
 	
 	UPROPERTY(EditAnywhere, Category = "Player Values", meta = (UIMin = "0.1", UIMax = "1.0"))
 		float cameraSensitivity = 0.45f;
 	UPROPERTY(EditAnywhere, Category = "Player Values", meta = (UIMin = "30", UIMax = "120"))
 		int playerFOV = 90;
+		
+	UPROPERTY(EditAnywhere, Category = "Player Values")
+		float playerSpringSpeed = 1200.0f;
 	
 	UPROPERTY(EditAnywhere, Category = "Player Components")
 		class UCameraComponent *playerCamera;
@@ -52,4 +65,6 @@ protected:
 	// Functions
 	void PlayerMovement(const FInputActionValue &Value);
 	void CameraMovement(const FInputActionValue &Value);
+	void PlayerSprintStarted(const FInputActionValue &Value);
+	void PlayerSprintStopped(const FInputActionValue &Value);
 };

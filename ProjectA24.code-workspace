@@ -16,10 +16,7 @@
 	"extensions": {
 		"recommendations": [
 			"ms-vscode.cpptools",
-			"ms-dotnettools.csharp",
-			"vadimcn.vscode-lldb",
-			"ms-vscode.mono-debug",
-			"dfarley1.file-picker"
+			"ms-dotnettools.csharp"
 		]
 	},
 	"tasks": {
@@ -33,7 +30,7 @@
 					"ProjectA24",
 					"Linux",
 					"Debug",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -50,7 +47,7 @@
 					"ProjectA24",
 					"Linux",
 					"Debug",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -70,7 +67,7 @@
 					"ProjectA24",
 					"Linux",
 					"Debug",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -88,7 +85,7 @@
 					"ProjectA24",
 					"Linux",
 					"DebugGame",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -105,7 +102,7 @@
 					"ProjectA24",
 					"Linux",
 					"DebugGame",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -125,7 +122,7 @@
 					"ProjectA24",
 					"Linux",
 					"DebugGame",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -143,7 +140,7 @@
 					"ProjectA24",
 					"Linux",
 					"Development",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -160,7 +157,7 @@
 					"ProjectA24",
 					"Linux",
 					"Development",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -180,7 +177,7 @@
 					"ProjectA24",
 					"Linux",
 					"Development",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -198,7 +195,7 @@
 					"ProjectA24",
 					"Linux",
 					"Test",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -215,7 +212,7 @@
 					"ProjectA24",
 					"Linux",
 					"Test",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -235,7 +232,7 @@
 					"ProjectA24",
 					"Linux",
 					"Test",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -253,7 +250,7 @@
 					"ProjectA24",
 					"Linux",
 					"Shipping",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -270,7 +267,7 @@
 					"ProjectA24",
 					"Linux",
 					"Shipping",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -290,7 +287,7 @@
 					"ProjectA24",
 					"Linux",
 					"Shipping",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -308,7 +305,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"Debug",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -325,7 +322,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"Debug",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -345,7 +342,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"Debug",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -363,7 +360,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"DebugGame",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -380,7 +377,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"DebugGame",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -400,7 +397,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"DebugGame",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -418,7 +415,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"Development",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -435,7 +432,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"Development",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -455,7 +452,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"Development",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -473,7 +470,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"Test",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -490,7 +487,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"Test",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -510,7 +507,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"Test",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -528,7 +525,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"Shipping",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -545,7 +542,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"Shipping",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -565,7 +562,7 @@
 					"ProjectA24",
 					"LinuxArm64",
 					"Shipping",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -583,7 +580,7 @@
 					"ProjectA24Editor",
 					"Linux",
 					"Debug",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -600,7 +597,7 @@
 					"ProjectA24Editor",
 					"Linux",
 					"Debug",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -620,7 +617,7 @@
 					"ProjectA24Editor",
 					"Linux",
 					"Debug",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -638,7 +635,7 @@
 					"ProjectA24Editor",
 					"Linux",
 					"DebugGame",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -655,7 +652,7 @@
 					"ProjectA24Editor",
 					"Linux",
 					"DebugGame",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -675,7 +672,7 @@
 					"ProjectA24Editor",
 					"Linux",
 					"DebugGame",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -693,7 +690,7 @@
 					"ProjectA24Editor",
 					"Linux",
 					"Development",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -710,7 +707,7 @@
 					"ProjectA24Editor",
 					"Linux",
 					"Development",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -730,7 +727,7 @@
 					"ProjectA24Editor",
 					"Linux",
 					"Development",
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-waitmutex",
 					"-clean"
 				],
@@ -748,7 +745,7 @@
 			{
 				"name": "Launch ProjectA24 (Debug)",
 				"request": "launch",
-				"program": "/home/ishank/Documents/Unreal Projects/ProjectA24/Binaries/Linux/UnrealGame-Linux-Debug",
+				"program": "/run/media/ishank/Work/Projects/Unreal Engine/Project A24/Binaries/Linux/UnrealGame-Linux-Debug",
 				"preLaunchTask": "ProjectA24 Linux Debug Build",
 				"args": [
 				],
@@ -760,7 +757,7 @@
 			{
 				"name": "Launch ProjectA24 (DebugGame)",
 				"request": "launch",
-				"program": "/home/ishank/Documents/Unreal Projects/ProjectA24/Binaries/Linux/UnrealGame-Linux-DebugGame",
+				"program": "/run/media/ishank/Work/Projects/Unreal Engine/Project A24/Binaries/Linux/UnrealGame-Linux-DebugGame",
 				"preLaunchTask": "ProjectA24 Linux DebugGame Build",
 				"args": [
 				],
@@ -772,7 +769,7 @@
 			{
 				"name": "Launch ProjectA24 (Development)",
 				"request": "launch",
-				"program": "/home/ishank/Documents/Unreal Projects/ProjectA24/Binaries/Linux/UnrealGame",
+				"program": "/run/media/ishank/Work/Projects/Unreal Engine/Project A24/Binaries/Linux/UnrealGame",
 				"preLaunchTask": "ProjectA24 Linux Development Build",
 				"args": [
 				],
@@ -784,7 +781,7 @@
 			{
 				"name": "Launch ProjectA24 (Test)",
 				"request": "launch",
-				"program": "/home/ishank/Documents/Unreal Projects/ProjectA24/Binaries/Linux/UnrealGame-Linux-Test",
+				"program": "/run/media/ishank/Work/Projects/Unreal Engine/Project A24/Binaries/Linux/UnrealGame-Linux-Test",
 				"preLaunchTask": "ProjectA24 Linux Test Build",
 				"args": [
 				],
@@ -796,7 +793,7 @@
 			{
 				"name": "Launch ProjectA24 (Shipping)",
 				"request": "launch",
-				"program": "/home/ishank/Documents/Unreal Projects/ProjectA24/Binaries/Linux/UnrealGame-Linux-Shipping",
+				"program": "/run/media/ishank/Work/Projects/Unreal Engine/Project A24/Binaries/Linux/UnrealGame-Linux-Shipping",
 				"preLaunchTask": "ProjectA24 Linux Shipping Build",
 				"args": [
 				],
@@ -811,7 +808,7 @@
 				"program": "/home/ishank/Documents/Unreal Engine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
 				"preLaunchTask": "ProjectA24Editor Linux Debug Build",
 				"args": [
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject"
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject"
 				],
 				"cwd": "/home/ishank/Documents/Unreal Engine",
 				"type": "cppdbg",
@@ -824,7 +821,7 @@
 				"program": "/home/ishank/Documents/Unreal Engine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
 				"preLaunchTask": "ProjectA24Editor Linux DebugGame Build",
 				"args": [
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject"
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject"
 				],
 				"cwd": "/home/ishank/Documents/Unreal Engine",
 				"type": "cppdbg",
@@ -837,7 +834,7 @@
 				"program": "/home/ishank/Documents/Unreal Engine/Engine/Binaries/Linux/UnrealEditor",
 				"preLaunchTask": "ProjectA24Editor Linux Development Build",
 				"args": [
-					"/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject"
+					"/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject"
 				],
 				"cwd": "/home/ishank/Documents/Unreal Engine",
 				"type": "cppdbg",
@@ -853,7 +850,7 @@
 				"args": [
 					"-projectfiles",
 					"-vscode",
-					"-project=/home/ishank/Documents/Unreal Projects/ProjectA24/ProjectA24.uproject",
+					"-project=/run/media/ishank/Work/Projects/Unreal Engine/Project A24/ProjectA24.uproject",
 					"-game",
 					"-engine",
 					"-dotnet"

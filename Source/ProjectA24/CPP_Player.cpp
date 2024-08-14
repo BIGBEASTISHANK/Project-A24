@@ -17,6 +17,10 @@ ACPP_Player::ACPP_Player()
 void ACPP_Player::BeginPlay()
 {
 	Super::BeginPlay();
+
+	//Setting Movement Component
+	MovementComponent = GetCharacterMovement();
+	defaultMaxWalkSpeed = MovementComponent->GetMaxSpeed();
 }
 
 // 
@@ -44,7 +48,9 @@ void ACPP_Player::SetupPlayerInputComponent(UInputComponent *PlayerInputComponen
 	// Movement actions binding to functions
 	playerEnhancedInputComponent->BindAction(jumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
 	playerEnhancedInputComponent->BindAction(moveAction, ETriggerEvent::Triggered, this, &ACPP_Player::PlayerMovement);
-	playerEnhancedInputComponent->BindAction(lookAction, ETriggerEvent:: Triggered, this, &ACPP_Player::CameraMovement);
+	playerEnhancedInputComponent->BindAction(lookAction, ETriggerEvent::Triggered, this, &ACPP_Player::CameraMovement);
+	playerEnhancedInputComponent->BindAction(sprintAction, ETriggerEvent::Started, this, &ACPP_Player::PlayerSprintStarted);
+	playerEnhancedInputComponent->BindAction(sprintAction, ETriggerEvent::Completed, this, &ACPP_Player::PlayerSprintStopped);
 }
 
 // CustomFunctions
@@ -72,4 +78,16 @@ void ACPP_Player::CameraMovement(const FInputActionValue &Value)
 	AddControllerYawInput(camInput.X * cameraSensitivity);
 	// Look up down
 	AddControllerPitchInput(camInput.Y * cameraSensitivity);
+}
+
+// Player Sprinting
+void ACPP_Player::PlayerSprintStarted(const FInputActionValue &Value)
+{
+	// Start sprinting
+	MovementComponent->MaxWalkSpeed = playerSpringSpeed;
+}
+void ACPP_Player::PlayerSprintStopped(const FInputActionValue &Value)
+{
+	// Stop Sprinting
+	MovementComponent->MaxWalkSpeed = defaultMaxWalkSpeed;
 }
