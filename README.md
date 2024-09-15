@@ -64,5 +64,5 @@
 ## Dates
 - Work started on 22nd March 2024
 - Work stopped (due to studies) on 25th March 2024
-
 - Work <b>ReStarted</b> on 14th August 2024 
+- Work stopped for learning unreal engine c++ on 15th September 2024

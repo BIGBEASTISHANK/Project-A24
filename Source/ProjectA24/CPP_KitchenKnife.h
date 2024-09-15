@@ -1,26 +1,28 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
+// Defaults
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/BoxComponent.h"
 #include "CPP_KitchenKnife.generated.h"
 
 UCLASS()
 class PROJECTA24_API ACPP_KitchenKnife : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
+
+public:
 	ACPP_KitchenKnife();
 
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
+public:
 	virtual void Tick(float DeltaTime) override;
 
+public:
+	UPROPERTY(EditDefaultsOnly, Category = "Knife Components")
+	class UStaticMeshComponent *knifeStaticMesh;
+	UPROPERTY(EditDefaultsOnly, Category = "Knife Components")
+	class UBoxComponent *boxComponent;
 };
