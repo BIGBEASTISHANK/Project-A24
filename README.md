@@ -60,6 +60,7 @@
 
 ### Known Issue
 - [ ] FOV Don't change smoothly while changing state between sprint and walk
+- [ ] Crosshair not coming on viewport
 
 ## Dates
 - Work started on 22nd March 2024
